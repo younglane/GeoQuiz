@@ -8,6 +8,7 @@ private const val TAG = "QuizViewModel"
 class QuizViewModel : ViewModel() {
     var currentIndex = 0
     var isCheater = false //used to store the result of if they cheated or not when they switch frames
+    var cheatsRemaining = 3
 
     private val questionBank = listOf(
         Question(R.string.question_australia, true),
